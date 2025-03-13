@@ -10,7 +10,7 @@
 
 ### Overview
 
-> Lollipop - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
+> **Lollipop** - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
 
 Lollipop is a provider of modular solutions for Network Extensions/Solana L2/Rollup with diverse execution environments that can broadly be categorized as middlewares and instances. As opposed to Layer 2 solutions, Network Extensions does not result in liquidity or user fragmentation. Lollipop is an extension of Solana's monolithic infrastructure. NES environments can include TEEs, co-processors, zk-encryption, FHE, trusted solver networks, AI agents and more, even in non-blockchain contexts. Lollipop Instances and Middlewares do not rely on cross-chain technologies for integration with Solana. Instead, they interconnect via Solana itself, utilizing program delegation, preserving direct connectivity without bridges.
 
@@ -60,8 +60,8 @@ The sBPF Runtime Feasibility & Prototype Development in PolkaVM aims to evaluate
   - Confirmation of successful storage
 
 > **Please Note:**
-- The state difference is stored in an external DB rather than committed to blockchain storage.
-- This ensures minimal modifications to PolkaVM while still capturing execution feasibility.
+> - The state difference is stored in an external DB rather than committed to blockchain storage.
+> - This ensures minimal modifications to PolkaVM while still capturing execution feasibility.
 
 **Documentation of Core Components, Protocols, Architecture:**
 The architecture for this feasibility study and prototype development is designed to:
