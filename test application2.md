@@ -6,18 +6,19 @@
 - **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
 
 
-#### Project Overview :page_facing_up:
+# Project Overview :page_facing_up:
 
-### Overview
+## Overview
 
-> **Lollipop** - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
+**Tag line:** **Lollipop** - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
 
-Lollipop is a provider of modular solutions for Network Extensions/Solana L2/Rollup with diverse execution environments that can broadly be categorized as middlewares and instances. As opposed to Layer 2 solutions, Network Extensions does not result in liquidity or user fragmentation. Lollipop is an extension of Solana's monolithic infrastructure. NES environments can include TEEs, co-processors, zk-encryption, FHE, trusted solver networks, AI agents and more, even in non-blockchain contexts. Lollipop Instances and Middlewares do not rely on cross-chain technologies for integration with Solana. Instead, they interconnect via Solana itself, utilizing program delegation, preserving direct connectivity without bridges.
+**Brief description:** Lollipop is a provider of modular solutions for Network Extensions/Solana L2/Rollup with diverse execution environments that can broadly be categorized as middlewares and instances. As opposed to Layer 2 solutions, Network Extensions does not result in liquidity or user fragmentation. Lollipop is an extension of Solana's monolithic infrastructure. NES environments can include TEEs, co-processors, zk-encryption, FHE, trusted solver networks, AI agents and more, even in non-blockchain contexts. Lollipop Instances and Middlewares do not rely on cross-chain technologies for integration with Solana. Instead, they interconnect via Solana itself, utilizing program delegation, preserving direct connectivity without bridges.
 
 **Integration into Polkadot:**  Polkadot JAM in emulating SVM execution with PolkaVM, which is RISK-V level virtual-machine, so users may use SVM programs with Polkadot’s JAM, just like Mac users can run windows app with emulators like Parallels Desktop. With this being successful, the Execution Environment (VM) Fragmentation will be gone completely.
 sBPF Runtime as a Service in PolkaVM - is a middleware that will enable running SVM-related environments, taking full advantage of PVM and increasing Polkadot utilisation through synergies with the Solana and SVM-based ecosystems.
 
 **Motivation:** The Lollipop team is made up of members who are deeply immersed in Polkadot, Solana, and other ecosystems. Being inspired by the opportunities presented by the Polkadot JAM along with understanding the functional bottlenecks for Solana led us to the vision for Lollipop. We came to the conclusion that a modular framework based on Polkadot technologies with the widest customization possibilities is ideal for both the Solana ecosystem and for running individual spaces (runtimes) based on PVM combined with sBPF.
+
 
 ### Project Details
 
