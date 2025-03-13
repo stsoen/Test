@@ -47,15 +47,15 @@ The sBPF Runtime Feasibility & Prototype Development in PolkaVM aims to evaluate
   - 'program_id': Unique identifier of the sBPF contract
   - 'execution_params': Parameters for the execution (e.g., function input, gas limit)
 - Output:
-  - Execution logs ('stdout', 'errors', 'syscall output')
-  - State difference ('{storage_addr: old → new}')
+  - Execution logs (`stdout`, `errors`, `syscall output`)
+  - State difference (`{storage_addr: old → new}`)
 
 **State Diff & Result Storage API**
 - Purpose: Stores execution results outside of PolkaVM for later verification.
 - Input:
-  - 'execution_id': Unique execution session ID
-  - 'state_diff': Key-value pairs of changed state values
-  - 'logs': Execution logs for debugging
+  - `execution_id`: Unique execution session ID
+  - `state_diff`: Key-value pairs of changed state values
+  - `logs`: Execution logs for debugging
 - Output:
   - Confirmation of successful storage
 
@@ -63,7 +63,7 @@ The sBPF Runtime Feasibility & Prototype Development in PolkaVM aims to evaluate
 - The state difference is stored in an external DB rather than committed to blockchain storage.
 - This ensures minimal modifications to PolkaVM while still capturing execution feasibility.
 
-Documentation of Core Components, Protocols, Architecture:
+**Documentation of Core Components, Protocols, Architecture:**
 The architecture for this feasibility study and prototype development is designed to:
 - Execute a basic sBPF contract (counter program) inside PolkaVM
 - Store the execution results externally
@@ -137,13 +137,7 @@ The Lollipop team consists of experienced cryptographers, developers and crypto 
 - https://github.com/clearloop 
 - https://github.com/lei-1993 
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
-
 ### Team LinkedIn Profiles (if available)
-
 - https://www.linkedin.com/in/qinwenwang/ 
 - https://www.linkedin.com/in/kyle-gu/
 - https://www.linkedin.com/in/stsoien/ 
@@ -183,9 +177,9 @@ This roadmap outlines the phased development of the sBPF Runtime as a Service in
 | **0b.** | Documentation | Initial architecture documentation explaining sBPF execution in PVM |
 | **0c.** | Testing and Testing Guide | Unit tests to measure compiled sBPF interpreter size |
 | 0d. | Article | Publish an article outlining feasibility analysis and prototype development |
-| 1. | Compile 'anza-xyz/sbpf' with 'no_std' and analyze feasibility | Analyze feasibility of 'no_std' adaptation and remove Solana-specific dependencies |
+| 1. | Compile `anza-xyz/sbpf` with 'no_std' and analyze feasibility | Analyze feasibility of `no_std` adaptation and remove Solana-specific dependencies |
 | 2. | Memory & Execution Profiling for Minimal sBPF | Measure compiled binary size, execution time, and memory footprint for minimal sBPF programs. |
-| 3. | Fork 'anza-xyz/sbpf' & Introduce PVM Service ('jam-pvm-common') | Refactor sBPF interpreter to work as a PolkaVM service using 'jam-pvm-common'. |
+| 3. | Fork `anza-xyz/sbpf` & Introduce PVM Service (`jam-pvm-common`) | Refactor sBPF interpreter to work as a PolkaVM service using `jam-pvm-common`. |
 | 4. | Compile & Measure sBPF Binary Size | Ensure it fits within 4MB PVM service limit. |
 | 5. | Minimal sBPF Execution Test in PVM | Deploy and execute a simple contract (e.g., counter) in PolkaVM to confirm functional sBPF execution. The result of execution to be stored in a separated DB. |
 
