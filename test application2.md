@@ -35,6 +35,7 @@ sBPF Runtime as a Service in PolkaVM - is a middleware that will enable running 
 - **Initial Feasibility Testing:** Binary profiling and testing of execution overhead.
 
 **Data Models / API Specifications of the Core Functionality**
+
 The sBPF Runtime Feasibility & Prototype Development in PolkaVM aims to evaluate whether sBPF programs can be executed inside PolkaVM with modified sBPF runtime, with a minimal prototype that includes basic contract execution and result storage, the API specifications focus on:
 1. Submitting an sBPF program for execution in PolkaVM
 2. Retrieving and storing execution results
