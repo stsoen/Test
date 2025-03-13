@@ -126,7 +126,7 @@ The approach presented by Lollipop using PolkaVM, as far as we know at the momen
 ### Team's experience
 
 The Lollipop team consists of experienced cryptographers, developers and crypto builders and is focused on building Network Extensions for Solana using Polkadot technologies.
-- **Qinwen Wang:** CEO, Founder. 4 years in @web3foundation & Polkadot Councilor (1/13 seats of Polkadot Council Members for on-chain treasury management.); Producer of "Virtual Niche" - the World's first Crypto Art NFT Museum Exhibition; Curator and lecturer for Christie's NFT 101 HK & London; Curator and collector of Sotheby's metaverse auction; Angel investor, Forbes 30U30.
+- **Qinwen Wang:** CEO, Founder. 4 years in Web3 foundation; Producer of "Virtual Niche" - the World's first Crypto Art NFT Museum Exhibition; Curator and lecturer for Christie's NFT 101 HK & London; Curator and collector of Sotheby's metaverse auction; Angel investor, Forbes 30U30.
 - **Kyle Gu:** Founder’s office. MSC in Actuarial Science & PD in Computer Science of University of Kent; Over 8 Years of development operation experiences for crypto projects; Prev Magnet Network Project Manager; Prev Darwinia Network BD Manager.
 - **Tianyi:** Head of JAM Implementation. Author of Spacejam Network, Zink language contributor, prev developer and top 5 contributors of GEAR, prev developer in Chainsafe.
 - **Stepan Soin:** Head of Research. 4 years General manager and ecosystem researcher at Avalanche, Researcher and Coordinator at Dehales Capital, VC Investment analytics Cryptomeria Capital.
