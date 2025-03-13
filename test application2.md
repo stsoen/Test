@@ -8,7 +8,7 @@
 
 # Project Overview :page_facing_up:
 
-## Overview
+### Overview
 
 **Tag line:** **Lollipop** - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
 
