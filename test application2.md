@@ -10,7 +10,7 @@
 
 ### Overview
 
-Lollipop - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
+> Lollipop - modular framework for Solana and SVM, based on Polkadot JAM and PolkaVM.
 
 Lollipop is a provider of modular solutions for Network Extensions/Solana L2/Rollup with diverse execution environments that can broadly be categorized as middlewares and instances. As opposed to Layer 2 solutions, Network Extensions does not result in liquidity or user fragmentation. Lollipop is an extension of Solana's monolithic infrastructure. NES environments can include TEEs, co-processors, zk-encryption, FHE, trusted solver networks, AI agents and more, even in non-blockchain contexts. Lollipop Instances and Middlewares do not rely on cross-chain technologies for integration with Solana. Instead, they interconnect via Solana itself, utilizing program delegation, preserving direct connectivity without bridges.
 
@@ -30,7 +30,7 @@ sBPF Runtime as a Service in PolkaVM - is a middleware that will enable running 
 
 **PoC/MVP or Other Relevant Prior Work**
 - **Concept Validation:** Discussions with Dr. Gavin Wood on feasibility.
-- **Technical Research:** Published article "sBPF Program Execution on PVM - HackMD".
+- **Technical Research:** Published article ["sBPF Program Execution on PVM - HackMD"](https://hackmd.io/@clearloop/rk6JhtdK1g).
 - **On-going Work:** Adaptation of 'anza-xyz/sbpf' for no_std execution.
 - **Initial Feasibility Testing:** Binary profiling and testing of execution overhead.
 
@@ -59,7 +59,7 @@ The sBPF Runtime Feasibility & Prototype Development in PolkaVM aims to evaluate
 - Output:
   - Confirmation of successful storage
 
-**Please Note:**
+> **Please Note:**
 - The state difference is stored in an external DB rather than committed to blockchain storage.
 - This ensures minimal modifications to PolkaVM while still capturing execution feasibility.
 
@@ -68,6 +68,13 @@ The architecture for this feasibility study and prototype development is designe
 - Execute a basic sBPF contract (counter program) inside PolkaVM
 - Store the execution results externally
 - Validate whether execution is feasible within PolkaVM’s constraints (4MB limit, memory access, syscalls, etc.)
+
+We have justified the need for a modular solution for Solana in detail in a number of our researches and observations:
+  - https://hackmd.io/@clearloop/rk6JhtdK1g 
+  - https://www.lollipop.builders/Lollipop%20Network%20Extensions%20Report.pdf 
+  - https://www.lollipop.builders/research 
+  - https://medium.com/lollipop-builders/trump-and-melania-transactions-failure-investigation-b2a5c54d2021 
+  - https://medium.com/lollipop-builders/how-lollipop-is-turning-solana-into-a-modular-playground-for-developers-c715262a5a1e 
 
 **Business-oriented activities (marketing, business planning), events or outreach:**
 At the moment, the test environment is in the process of being deployed. We are currently working with Mantis, RWA business, perp dexes and we are also developing a presence in the gaming sector. Lollipop also has arrangements with RWA business, RWA business which will issue tokens and be regulated by the HK authorities based on Solar power plant receivables for the next ten years. We are also in the process of discussing engagement with marketing agencies such as Market Across and Cointelegraph. 
@@ -88,13 +95,6 @@ In the context of "sBPF Runtime as a Service in PolkaVM", the proposed solution 
 - **Developers:** Our solution expands development opportunities by seamlessly bridging different developer cohorts through the introduction of new tools and primitives.
 - **Users:** the customizability of runtimes will open up new capabilities not available to institutional and enterprise customers in Solana and SVM forks
 - **Polkadot ecosystem participants:** validators, delegators, developers
-
-We have justified the need for a modular solution for Solana in detail in a number of our researches and observations:
-  - https://hackmd.io/@clearloop/rk6JhtdK1g 
-  - https://www.lollipop.builders/Lollipop%20Network%20Extensions%20Report.pdf 
-  - https://www.lollipop.builders/research 
-  - https://medium.com/lollipop-builders/trump-and-melania-transactions-failure-investigation-b2a5c54d2021 
-  - https://medium.com/lollipop-builders/how-lollipop-is-turning-solana-into-a-modular-playground-for-developers-c715262a5a1e 
 
 **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?**
 Previously, the Polkadot community considered proposals for deploying SVM on Parachains **[(link)](https://forum.polkadot.network/t/solana-parachain/7055)**. However, this approach involved significant trade-offs due to the architecture of Polkadot 1.0 and required a compatibility layer for the Substrate node to function as a Solana node. The constraints related to performance limitations and the need to develop an ecosystem around a Solana fork within a Parachain—without providing tangible benefits to either the Solana or Polkadot ecosystems—rendered this idea impractical.
@@ -187,20 +187,21 @@ This roadmap outlines the phased development of the sBPF Runtime as a Service in
 ## Future Plans
 
 Lollipop is committed to expanding Polkadot's execution capabilities by enabling Solana sBPF program execution within PolkaVM. Our work on sBPF Runtime as a Service in PolkaVM is just the first step toward a broader cross-ecosystem compatibility strategy.
+
 In the near future, we aim to:
 
-1. Scale Up Development & Deployment
+**1. Scale Up Development & Deployment**
   - Complete the implementation and optimization of sBPF execution in PolkaVM with multiple PVM services,
   - Deploy this execution layer, ensuring efficient performance and seamless interaction with Solana’s state model.
 
-2. Enhance Compatibility & Performance
+**2. Enhance Compatibility & Performance**
   - Investigate additional optimizations to improve the efficiency and security of sBPF execution.
 
-3. Expand Developer Adoption
+**3. Expand Developer Adoption**
   - Provide SDKs and tooling to help developers port and deploy Solana smart contracts to Polkadot.
   - Offer comprehensive documentation and examples to simplify integration.
 
-4. Long-Term Vision: Unified Execution Layer
+**4. Long-Term Vision: Unified Execution Layer**
   - This initiative aligns with Lollipop’s broader vision of creating a unified execution layer across multiple ecosystems.
   - In future iterations, we plan to extend PolkaVM’s support beyond Solana’s sBPF to other high-performance execution environments, such as AI-based computation or modular rollups.
 
