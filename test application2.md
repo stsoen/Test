@@ -1,4 +1,4 @@
-# Name of your Project
+# Lollipop: sBPF Runtime as a Service on PolkaVM 
 
 - **Team Name:** Lollipop Builders
 - **Payment Details:**
